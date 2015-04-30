@@ -13,7 +13,7 @@ DATE = re.compile(".*(\d{4})-(\d{2})-(\d{2}).*")
 
 class DataParser(object):
     GOOGLE_FINANCE_URL = "https://www.google.com/finance?q={}:{}$fstype=ii"
-    
+
     def __init__(self, market, symbol):
         self.market = str(market).upper()
         self.symbol = str(symbol).upper()
